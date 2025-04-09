@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora IMC</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main>
+    <form>
+      <div class="user-input">
+        <label for="peso">Peso</label>
+        <input type="number" id="peso" placeholder="KG">
+      </div>
+      <div class="user-input">
+        <label for="altura">Altura</label>
+        <input type="number" id="altura" placeholder="CM">
+      </div>
+      <input id="btnCalcular" type="submit" value="Calcular">
+    </form>
+    <div class="res">
+      <p>Saiba agora se está no seu peso ideal!</p>
+       <!-- <div class="status">
+        <p>Peso</p>
+        <p>Altura</p>
+        <p>IMC</p>
+        <p>Resultado</p>
+       </div>
+       <div class="parametro">
+        <p>60</p>
+        <p>1,65</p>
+        <p>22,04</p>
+        <p>Peso normal</p>
+       </div> -->
+    </div>
+    <div class="tabela">
+      <div class="imc">
+        <p>IMC</p>
+        <p>Menos de 17</p>
+        <p>Entre 17 e 18,49</p>
+        <p>Entre 18,5 e 24,99</p>
+        <p>Entre 25 e 29,99</p>
+        <p>Entre 30 e 34,99</p>
+        <p>Entre 35 e 39,99</p>
+        <p>Acima de 40</p>
+      </div>
+      <div class="classificacao">
+        <p>Classificação</p>
+        <p>Muito abaixo do peso</p>
+        <p>Abaixo do peso</p>
+        <p>Peso normal</p>
+        <p>Acima do peso</p>
+        <p>Obesidade I</p>
+        <p>Obesidade II (severa)</p>
+        <p>Obesidade III (mórbida)</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>

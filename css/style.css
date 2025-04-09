@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  width: 510px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  & .user-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & label {
+      color: #505050;
+    }
+
+    & input {
+      padding: 14px 26px;
+      border-radius: 6px;
+      outline: none;
+      border: 1px solid #E85B81;
+      width: 100%;
+    }
+  }
+
+  & #btnCalcular {
+    background-color: #E85B81;
+    border-radius: 6px;
+    padding: 13px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  & #btnCalcular:hover {
+    background-color: #e84671;
+  }
+}
+
+.res {
+  color: #ABABAB;
+  text-align: center;
+
+  & p {
+    width: 254px;
+    margin: auto;
+  }
+
+  display: flex;
+  flex-direction: column;
+
+  & div {
+    display: flex;
+    color: #505050;
+  }
+
+  & div:first-child {
+    border-bottom: #E85B81 1px solid;
+    padding-bottom: 10px;
+    font-weight: 700;
+  }
+
+  & div:last-child {
+    padding-top: 10px;
+  }
+}
+
+.tabela {
+  width: 510px;
+  display: flex;
+  border: #F4F4F4 1px solid;
+
+  & .imc {
+    width: 260px;
+    & p:nth-child(odd) {
+      background-color: #F4F4F4;
+    }
+
+    & p:first-child {
+      color: #E85B81;
+      font-weight: 700;
+    }
+  }
+
+  & .classificacao {
+    width: 260px;
+    & p:nth-child(odd) {
+      background-color: #F4F4F4;
+    }
+
+    & p:first-child {
+      color: #E85B81;
+      font-weight: 700;
+    }
+  }
+
+  & p {
+    padding: 12px;
+    width: 100%;
+    color: #505050;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 88%;
+  }
+  main, .tabela {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  html {
+    font-size: 70%;
+  }
+}
