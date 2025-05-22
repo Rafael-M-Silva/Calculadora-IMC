@@ -4,6 +4,12 @@ Calculadora simples desenvolvida com **HTML**, **CSS** e **JavaScript** que perm
 
 ---
 
+## 🖼️ Demonstração
+
+<img src="./imc.JPG" alt="Calc IMC" />
+
+---
+
 ## 🧮 Fórmula do IMC
 
 IMC = peso / (altura * altura)
@@ -28,13 +34,3 @@ IMC = peso / (altura * altura)
   - Sobrepeso
   - Obesidade grau 1
 - Layout responsivo
-
----
-
-## 📁 Estrutura do Projeto
-
-```bash
-📦 calculadora-imc
- ┣ 📜 index.html
- ┣ 📜 style.css
- ┗ 📜 script.js
